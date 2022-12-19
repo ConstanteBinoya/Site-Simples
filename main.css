@@ -1,57 +1,145 @@
-:root {
-    --green: #00ff00;
-    --white: #ffffff;
-    --black: #000000;
-}
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
 
 * {
-    color: var(--fontColor);
-    font-family: helvetica;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
-    background: var(--bg);
+    font-size: 100%;
+    background: linear-gradient(253.63deg, #0DF0E2 4.91%, #3F908B 60.47%, #0D4B48 100.01%);
 }
 
-ul {
-    font-family: helvetica;
+.cabeçalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px;
 }
 
-li {
-    list-style: circle;
-}
-
-.list {
-    list-style: square;
-}
-
-
-.ligth-theme {
-    --bg: var(--green);
-    --fontColor: var(--black);
-    --btnBg: var(--black);
-    --btnFontColor: var(var(--white));
-}
-
-.dark-theme {
-    --bg: var(--black);
-    --fontColor :var(--green);
-    --btnBg: var(--white);
-    --btnFontColor: var(--black);
-}
-
-.btn {
-    position: absolute;
-    top: 20px;
-    left: 250px;
+.cabeçalho-imagem {
     height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    border: none;
-    color: var(--btnFontColor);
-    background-color: var(--btnBg);
 }
 
-.btn:focus {
-    outline-style: none;
+.cabeçalho-menu {
+    display: flex;
+    gap: 32px;
 }
+
+.cabeçalho-menu-item {
+    font-family: 'Sarala', sans-serif;
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 0.4px solid #060C1D;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+    .conteudo-principal-escrito-titulo {
+        font-family: 'Sarala', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        color: #000000;
+    }
+
+    .conteudo-principal-escrito-subtitulo {
+        font-family: 'Righteous', cursive;
+        font-weight: 400;
+        font-size: 64px;
+        color: #000000;
+    }
+
+    .conteudo-principal-escrito-subtitulo_1 {
+        font-family: 'Sarala', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        color: #000000;
+    }
+
+    .conteudo-principal-escrito-botao {
+        background-color: rgba(0, 0, 0, 0.71);;
+        width: 180px;
+        height: 60px;
+        border: none;
+        box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        font-family: 'Sarala', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        color: #BEBEE1
+    }
+
+    .conteudo-principal-escrito-botao:hover {
+        background-color: rgba(236, 214, 196, 0.53);
+    }
+
+    .conteudo-principal-imagem {
+        height: 260px;
+    }
+
+    .conteudo-secundário {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 48px;
+    }
+
+    .conteudo-secundário-título {
+        border-top: 0.4px solid #060C1D;
+        padding-top: 28px;
+        font-family: 'Sarala', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        color: #000000;
+    }
+    
+    .conteudo-secundário-parágrafo_1 {
+        font-family: 'Sarala', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        color: #000000;   
+    }
+
+    .conteudo-secundário-parágrafo_2{
+        font-family: 'Sarala', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        color: #000000; 
+    }
+
+    .conteudo-secundário-parágrafo_3 {
+        font-family: 'Sarala', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        color: #000000; 
+    }
+
+    .rodapé {
+        padding: 20px;
+        border-top: 0.4px solid #060C1D;
+    }
+
+    .rodapé-imagem {
+        height: 48px;
+        display: block;
+        margin: 0 auto;
+    }

@@ -3,57 +3,47 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projeto de site simples com os primeiros passos para se tornar um DEV"
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <meta name="description"content="Projeto de site simples com os primeiros passos para se tornar um DEV">
     <title>Site simples para desenvolvedores iniciantes</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet"type="text/css"href="main.css">
 </head>
 
-<body class="light-theme">
-    <header>
-        <img src="logo.svg" alt="Logo da ShabaKookieS">
-        <nav>
-            <a>Início</a>
-            <a>Desenvolvedor</a>
-            <a>Habilidades</a>
-            <a>Projetos</a>
-        </nav>
-       </header>
-    
-       <main>
-        <section>
-            <div>
-                <h3>Olá, eu sou</h3>
-                <h1>Shaba Bot</h1>
-                <h3>Vamos aprender programação juntos</h3>
-                <button>Começar</button>
-            </div>
-            <img src="Shaba Bot.svg" alt="Imagem do Shaba Bot">
-        </section>
+<body>
+   <header class="cabeçalho">
+    <img class="cabeçalho-imagem" src="logo.svg" alt="Logo da ShabaKookieS">
+    <nav class="cabeçalho-menu">
+        <a class="cabeçalho-menu-item">Início</a>
+        <a class="cabeçalho-menu-item">Desenvolvedor</a>
+        <a class="cabeçalho-menu-item">Habilidades</a>
+        <a class="cabeçalho-menu-item">Projetos</a>
+    </nav>
+   </header>
 
-        <section>
-            <h3>O que ele faz por você?</h3>
-            <p>1. <strong>Tamém sou iniciante em programação</strong> e tudo o que eu aprender vou postar para <strong>evoluirmos juntos.</strong></p>
-            <p>2. Vamos <strong>analisar o nosso progresso constantemente</strong> com a ajuda de uma <strong>linha do tempo.</strong></p>
-            <p>3. <strong>Vou te incentivar o máximo:  comece pequeno, comesse simples... Apenas comece e não pare!</strong></p>
-        </section>
-       </main>
-    
-       <footer>
-        <img src="Shaba_Logo.svg" alt="Logo do estúdio Shabakookies.">
-       </footer>
-    <h1>Listas de tarefas</h1>
-    <p id=""msg>Tarefas atuais</p>
-    <ul>
-        <li class="list">Adicionar estilos visuais</li>
-        <li class="list">Adicionar temas claros e escuros</li>
-        <li>Habilitar a alternância de temas</li>
-    </ul>
-    <div>
-        <button class="btn">Escuro</button>
-    </div>
-    <script src="app.js"></script>
+   <main class="conteudo"> 
+    <section class="conteudo-principal">
+        <div class="conteudo-principal-escrito">
+            <h2 class="conteudo-principal-escrito-titulo">Olá, eu sou</h2>
+            <h1 class="conteudo-principal-escrito-subtitulo">Shaba Bot</h1>
+            <h2 class="conteudo-principal-escrito-subtitulo_1">Vamos aprender programação juntos</h2>
+            <button class="conteudo-principal-escrito-botao">Começar</button>
+        </div>
+        <img class="conteudo-principal-imagem"src="Shaba Bot.svg" alt="Imagem do Shaba Bot">
+    </section>
+
+    <section class="conteudo-secundário">
+        <h3 class="conteudo-secundário-título">Como irei te ajudar?</h3>
+        <p class="conteudo-secundário-parágrafo_1">1. <strong>Tamém sou iniciante em programação</strong> e tudo o que eu aprender vou postar para <strong>evoluirmos juntos.</strong></p>
+        <p class="conteudo-secundário-parágrafo_2">2. Vamos <strong>analisar o nosso progresso constantemente</strong> com a ajuda de uma <strong>linha do tempo.</strong></p>
+        <p class="conteudo-secundário-parágrafo_3">3. <strong>Vou te incentivar o máximo:  comece pequeno, comesse simples... Apenas comece e não pare!</strong></p>
+    </section>
+   </main>
+
+   <footer class="rodapé">
+    <img class="rodapé-imagem" src="Shaba_Logo.svg" alt="Logo do estúdio Shabakookies.">
+   </footer>
+
+        <script src="app.js"></script>
     <noscript>Você precisa habilitar java sript para ver o site completo.</noscript>
 </body>
 </html>
